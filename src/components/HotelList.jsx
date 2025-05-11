@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { deleteHotel } from "../services/hotelServices"
+import { deleteHotel } from "../services/hotelServices.js"
 import "./css/HotelList.css"
 
 const HotelList = ({ hotels = [], loading, error, onEdit, onDeleteSuccess }) => {

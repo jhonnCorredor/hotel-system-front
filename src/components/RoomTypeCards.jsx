@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { getAllowedAccommodations } from "../services/AllowedAccommodationService"
+import { getAllowedAccommodations } from "../services/AllowedAccommodationService.js"
 import "./css/RoomTypeCards.css"
 
 const RoomTypeCards = () => {

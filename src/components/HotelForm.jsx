@@ -1,8 +1,8 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { saveOrUpdateHotel } from "../services/hotelServices"
-import { getAllowedAccommodations } from "../services/AllowedAccommodationService"
+import { saveOrUpdateHotel } from "../services/hotelServices.js"
+import { getAllowedAccommodations } from "../services/AllowedAccommodationService.js"
 import "./css/HotelForm.css"
 
 const HotelForm = ({ hotel = null, onSuccess, onCancel }) => {

@@ -1,11 +1,11 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import HotelList from "../components/HotelList"
-import HotelForm from "../components/HotelForm"
-import RoomConfig from "../components/RoomConfig"
-import RoomTypeCards from "../components/RoomTypeCards"
-import { getHotels } from "../services/hotelServices"
+import HotelList from "../components/HotelList.jsx"
+import HotelForm from "../components/HotelForm.jsx"
+import RoomConfig from "../components/RoomConfig.jsx"
+import RoomTypeCards from "../components/RoomTypeCards.jsx"
+import { getHotels } from "../services/HotelServices.js"
 import "./css/HotelsPage.css"
 
 const HotelsPage = () => {

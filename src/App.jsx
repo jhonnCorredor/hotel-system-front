@@ -1,5 +1,5 @@
 import './App.css'
-import HotelsPage from './pages/hotelsPage'
+import HotelsPage from './pages/HotelsPage.jsx'
 
 function App() {
   return (
