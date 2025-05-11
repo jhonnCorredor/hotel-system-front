@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { saveOrUpdateHotel } from "../services/hotelServices.js"
+import { saveOrUpdateHotel } from "../services/HotelServices.js"
 import { getAllowedAccommodations } from "../services/AllowedAccommodationService.js"
 import "./css/HotelForm.css"
 
