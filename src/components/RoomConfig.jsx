@@ -97,7 +97,7 @@ const RoomConfig = ({ onClose }) => {
             <h3>Instrucciones de uso</h3>
             <p>Para gestionar los hoteles de manera efectiva, siga estas instrucciones:</p>
             <ol>
-              <li>Utilice el botón "Add New Hotel" para crear un nuevo hotel.</li>
+              <li>Utilice el botón "Añadir Hotel" para crear un nuevo hotel.</li>
               <li>Complete todos los campos requeridos en el formulario.</li>
               <li>Configure las habitaciones según los tipos y acomodaciones permitidos.</li>
               <li>Puede editar o eliminar hoteles existentes desde la lista de hoteles.</li>
