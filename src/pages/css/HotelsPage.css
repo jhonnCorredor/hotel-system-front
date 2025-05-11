@@ -1,0 +1,218 @@
+/* Variables */
+:root {
+  --primary-color: #0284c7;
+  --primary-gradient: linear-gradient(to right, #0284c7, #22d3ee);
+  --primary-hover: #0369a1;
+  --text-dark: #333;
+  --text-medium: #374151;
+  --text-light: #6b7280;
+  --border-color: #e5e7eb;
+  --background-light: #f9fafb;
+  --background-page: #f3f4f6;
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --radius: 8px;
+}
+
+/* Main container */
+.hotels-page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+  color: var(--text-dark);
+  background-color: var(--background-page);
+  min-height: 100vh;
+}
+
+/* Card styles for sections */
+.page-header-card,
+.section-card {
+  background-color: white;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+  padding: 1.5rem;
+  margin-bottom: 2.5rem;
+  border: 1px solid var(--border-color);
+}
+
+/* Header styles */
+.hotels-page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.header-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--primary-color);
+}
+
+.hotels-page-header h1 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin: 0;
+  color: var(--text-dark);
+}
+
+.header-actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+/* Section header */
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.section-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--primary-color);
+}
+
+.section-header h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+  color: var(--text-dark);
+}
+
+/* Button styles */
+.add-hotel-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--primary-gradient);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: var(--shadow-sm);
+}
+
+.add-hotel-button:hover {
+  background: var(--primary-hover);
+  box-shadow: var(--shadow-md);
+}
+
+.info-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: white;
+  color: var(--text-medium);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: var(--shadow-sm);
+}
+
+.info-button:hover {
+  background: var(--background-light);
+  box-shadow: var(--shadow-md);
+}
+
+.button-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* Hotel list wrapper for scrolling */
+.hotel-list-wrapper {
+  max-height: 800px; /* Altura aproximada para 5 tarjetas */
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+/* Scrollbar styles */
+.hotel-list-wrapper::-webkit-scrollbar {
+  width: 8px;
+}
+
+.hotel-list-wrapper::-webkit-scrollbar-track {
+  background: var(--background-light);
+  border-radius: 4px;
+}
+
+.hotel-list-wrapper::-webkit-scrollbar-thumb {
+  background-color: var(--border-color);
+  border-radius: 4px;
+}
+
+.hotel-list-wrapper::-webkit-scrollbar-thumb:hover {
+  background-color: #d1d5db;
+}
+
+/* Modal styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.modal-content {
+  background-color: white;
+  border-radius: var(--radius);
+  width: 100%;
+  max-width: 900px;
+  max-height: 90vh;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+/* Specific styles for form modal */
+.form-modal {
+  padding: 0;
+  overflow: auto;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .hotels-page-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .header-actions {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .add-hotel-button,
+  .info-button {
+    width: 100%;
+    justify-content: center;
+  }
+}
